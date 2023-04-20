@@ -24,6 +24,13 @@ const delete_reply = (idx:number)=>{
   _replies = _replies.filter((e,e_idx)=>e_idx!==idx)
   setallReplys(_replies)
 }
+
+
+  data.sort(sortByProperty('votes'))  ;
+  data.reverse()
+  console.log(data);
+  
+
   return (
     <div className='w-full h-full bg-[#e8ecf8]'>
       <div className=' p-2 mx-auto w-full sm:w-6/12 md:w-8/12 lg:w-6/12'>
