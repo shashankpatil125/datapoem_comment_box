@@ -1,8 +1,3 @@
-
-
-## Available Scripts
-In the project directory, you can run:
-
 ## Live Link to Access 
 https://datapoem.netlify.app/
 
