@@ -18,12 +18,12 @@ type Props = {
     onDelete:()=>void
 }
 
-function CommentBox({comment:{votes,createdAt,message,profilePic,username},...p}:Props ) {
+function CommentBox({comment:{votes,createdAt,message,profilePic,username,submessage},...p}:Props ) {
     const [vote, setvotes] = useState<number>(votes);
     const [voted, setvoted] = useState<number>(0);
     const [replyVisibility, setReplyVisibility] = useState<boolean>(false)
     const [deletePrompt, setdeletePrompt] = useState<boolean>(false)
-    const [replies,setReplies] =  useState<Comment[]>([])
+    const [replies,setReplies] =  useState<Comment[]>(submessage??[])
     const doReply:()=>void=()=>(setReplyVisibility(true))
     const doDel:()=>void=()=>(setdeletePrompt(true))
 
