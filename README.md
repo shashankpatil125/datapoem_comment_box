@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://datapoem.netlify.app/)
+- Live Site URL: [Live Site Link](https://datapoem.netlify.app/)
 
 ### Built with
 - [React](https://reactjs.org/) - JS library
